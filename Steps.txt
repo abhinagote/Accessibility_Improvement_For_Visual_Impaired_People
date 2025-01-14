@@ -1,0 +1,20 @@
+Install all modules one by one
+
+npm install express
+
+npm install multer
+
+npm install tesseract.js 
+
+npm install pdf-parse
+
+npm install gtts
+
+
+Run the file on vs code
+
+node index.js
+
+
+
+ 
