@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>NLP Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Exert Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //online-fonts -->
+
+    <!-- Internal CSS for styling -->
+    <style>
+        /* General form styling */
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 50%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heading styling */
+        h3 {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input and checkbox styling */
+        input[type="file"],
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        /* Label styling */
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Submit and cancel button styling */
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button[type="button"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        /* Form centering and responsiveness */
+        form {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Hover effects for buttons */
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        button[type="button"]:hover {
+            background-color: #e53935;
+        }
+    </style>
+    <style>
+        /* Styling for the audio player */
+        #audioPlayer {
+          width: 100%;
+          height: 40px;
+          background-color: #f0f0f0;
+          border-radius: 10px;
+          margin-top: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          display: block;
+        }
+      
+        /* Styling for download links */
+        #downloadLink, #brailleDownloadLink {
+          display: inline-block;
+          background-color: #0026ff; 
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          margin: 10px 5px;
+          font-family: Arial, sans-serif;
+          transition: background-color 0.3s ease;
+        }
+      
+        /* Hover effect for download links */
+        #downloadLink:hover, #brailleDownloadLink:hover {
+            background-color: #8000ff;
+          cursor: pointer;
+        }
+      
+        /* Hidden state styling */
+        #audioPlayer[style*="display: none"], 
+        #downloadLink[style*="display: none"],
+        #brailleDownloadLink[style*="display: none"] {
+          display: none;
+        }
+      </style>
+      
+</head>
+
+<body>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner" id="home">
+        <div class="header-top-w3layouts text-right">
+            <ul id="menu">
+                <li>
+                    <input id="check02" type="checkbox" name="menu" />
+                    <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                    <ul class="submenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="braille.html" class="scroll">Braille Conversion</a></li>
+                        <li><a href="speech.html" class="scroll">Speech Conversion</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="baner-info-w3ls text-left">
+                <h1><a href="index.html">Speech Conversion</a></h1>
+            </br>
+    
+    <!-- Form for Speech Conversion -->
+    
+    <form id="uploadSpeechForm" enctype="multipart/form-data">
+        <h2>Upload for Speech Conversion</h2>
+        <input type="file" name="file" accept=".txt,.pdf,image/*" required>
+        <select name="language" required>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="zh">Chinese (Mandarin)</option>
+            <option value="ar">Arabic</option>
+            <option value="ru">Russian</option>
+            <option value="it">Italian</option>
+            <option value="ko">Korean</option>
+            <option value="pt">Portuguese</option>
+            <option value="mr">Marathi</option>
+            <option value="ur">Urdu</option>
+            <option value="ta">Tamil</option>
+            <option value="ml">Malayalam</option>
+            <option value="sw">Swahili</option>
+            
+            <!-- Add more options as needed -->
+        </select>
+        <label>
+            <input type="checkbox" name="convertToBraille"> Convert to Braille
+        </label>
+        <button type="submit">Upload for Speech</button>
+        <button type="button" id="cancelSpeechButton">Cancel</button>
+    </form>
+    <br>
+    <form id="uploadBrailleForm" enctype="multipart/form-data">
+        <div id="loadingSpinner" style="display: none;">
+            <p>Loading...</p>
+        </div>
+        
+        <div id="extractedText"></div>
+        
+        <audio id="audioPlayer" controls style="display: none;"></audio>
+        <a id="downloadLink" download style="display: none;">Download Audio</a>
+        <a id="brailleDownloadLink" download style="display: none;">Download Braille</a>
+    </form>
+            </div>
+        </div>
+    </section>
+    <!-- Link to the JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
