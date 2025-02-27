@@ -40,6 +40,18 @@ The **Accessibility Improvement for Visually Impaired People** project provides 
 
 ## 📸 Screenshots  
 
+![image](https://github.com/user-attachments/assets/49ecf85c-a446-4745-8f93-c6e871e27720)
+![image](https://github.com/user-attachments/assets/cc531f9a-566e-4b3d-b3f9-2f03b4b1f85e)
+![image](https://github.com/user-attachments/assets/7cbd85a1-4aeb-44e2-8c96-287276fd1511)
+![image](https://github.com/user-attachments/assets/b3ef9b74-af45-491c-968b-a328d8b7f033)
+![image](https://github.com/user-attachments/assets/31a576f3-ab53-45ca-89db-cc90284b86e0)
+![image](https://github.com/user-attachments/assets/3e54ecd0-d465-4043-8ed5-5e6bb4631fab)
+![image](https://github.com/user-attachments/assets/883e4180-b162-408f-8c6b-c943073c3dd2)
+![image](https://github.com/user-attachments/assets/b872f690-2793-4dcf-8d22-5449cdb66c90)
+![image](https://github.com/user-attachments/assets/d039ff1d-2fc6-4746-bc44-c3aefb1d9d3c)
+![image](https://github.com/user-attachments/assets/72581c7b-98b9-4c01-afba-3ee637a7cd70)
+![image](https://github.com/user-attachments/assets/e8137644-5320-44cd-a3b9-d7304cb6594a)
+
 
 ## 👥 Team Members  
 - **Abhay Nagote** - Project Development, Integration, and Testing  
