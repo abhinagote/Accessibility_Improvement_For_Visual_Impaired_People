@@ -1,7 +1,3 @@
-Here is the updated README file with modified team member roles:  
-
----
-
 # 🔊 Accessibility Improvement for Visually Impaired People - CCNLP Mini Project  
 
 ## 📌 Introduction  
@@ -52,7 +48,6 @@ The **Accessibility Improvement for Visually Impaired People** project provides 
 ![image](https://github.com/user-attachments/assets/72581c7b-98b9-4c01-afba-3ee637a7cd70)
 ![image](https://github.com/user-attachments/assets/e8137644-5320-44cd-a3b9-d7304cb6594a)
 
-
 ## 👥 Team Members  
 - **Abhay Nagote** - Project Development, Integration, and Testing  
 - **Aryan Nikam** - OCR Processing and Backend Development  
@@ -60,7 +55,3 @@ The **Accessibility Improvement for Visually Impaired People** project provides 
 
 ## 📜 License  
 This project is open-source and available under the MIT License.  
-## Screenshots
-
-
-
